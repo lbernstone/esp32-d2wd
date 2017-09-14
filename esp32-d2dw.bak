@@ -319,13 +319,13 @@ $EndComp
 $Comp
 L C C2
 U 1 1 59AF7C8D
-P 3700 4800
-F 0 "C2" H 3725 4900 50  0000 L CNN
-F 1 "22pF" H 3725 4700 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 3738 4650 50  0001 C CNN
-F 3 "" H 3700 4800 50  0001 C CNN
-	1    3700 4800
-	-1   0    0    -1  
+P 3900 4400
+F 0 "C2" H 3925 4500 50  0000 L CNN
+F 1 "22pF" H 3925 4300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 3938 4250 50  0001 C CNN
+F 3 "" H 3900 4400 50  0001 C CNN
+	1    3900 4400
+	0    1    1    0   
 $EndComp
 $Comp
 L C C3
@@ -573,6 +573,10 @@ Wire Wire Line
 Wire Wire Line
 	3350 4750 3350 4700
 Wire Wire Line
+	4050 4400 4350 4400
+Wire Wire Line
+	4350 4300 4350 4450
+Wire Wire Line
 	2600 1200 4600 1200
 Wire Wire Line
 	4600 1200 4600 1600
@@ -661,9 +665,15 @@ Wire Wire Line
 	3350 5050 3350 5150
 Connection ~ 3350 5150
 Wire Wire Line
-	3700 4400 3700 4650
+	4350 4300 3700 4300
 Wire Wire Line
-	3350 4400 4350 4400
+	3700 4300 3700 4400
+Wire Wire Line
+	3700 4400 3350 4400
+Connection ~ 4350 4400
+Wire Wire Line
+	3750 4400 3750 5150
+Connection ~ 3750 5150
 Connection ~ 3200 2950
 Connection ~ 3200 2600
 Connection ~ 2600 2650
@@ -776,10 +786,4 @@ Wire Wire Line
 	6050 3450 6750 3450
 Wire Wire Line
 	6750 3450 6750 3500
-Connection ~ 3700 4400
-Wire Wire Line
-	3700 4950 3700 5150
-Connection ~ 3700 5150
-Wire Wire Line
-	4350 4400 4350 4450
 $EndSCHEMATC
